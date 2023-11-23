@@ -7,7 +7,10 @@
 </head>
 <body>
     <script>
-function fun(n)//named function
+ 
+
+        debugger;
+        function fun(n)//named function
 {
 for(i=0;i<=n;i=i+2)
 {
@@ -15,35 +18,35 @@ console.log(i);
 }
 }
 fun(10);
-var hello=(n)=>{//arrow function
-for(i=1;i<=n;i=i+2)
-{
-console.log(i);
-}
-}
-hello(10);
-var a=function (n){//anonymous function
-for(i=1;i<=n;i=i+2)
-{
-console.log(i);
-}
-}
-a(10);
-var a=(function fun(n){//immediately invoked
-    for(i=1;i<=n;i=i+2)
-{
-console.log(i);
-}
-})(10);
+// var hello=(n)=>{//arrow function
+// for(i=1;i<=n;i=i+2)
+// {
+// console.log(i);
+// }
+// }
+// hello(10);
+// var a=function (n){//anonymous function
+// for(i=1;i<=n;i=i+2)
+// {
+// console.log(i);
+// }
+// }
+// a(10);
+// var a=(function fun(n){//immediately invoked
+//     for(i=1;i<=n;i=i+2)
+// {
+// console.log(i);
+// }
+// })(10);
 
-function jay1()//returns function definition
-{
-    return function jay()
-        {
-            return "hello";        }
+// function jay1()//returns function definition
+// {
+//     return function jay()
+//         {
+//             return "hello";        }
     
-}
-console.log(jay());
+// }
+// console.log(jay());
 
 
     </script>
