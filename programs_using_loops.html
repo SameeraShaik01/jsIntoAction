@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 1. *Countdown:*
+   Write a program that prints numbers from 10 to 1 in descending order using a `while` loop. */
+    i=10;
+   while(i>0)
+   {
+   console.log(i);
+   i--;
+   } 
+   /* 2. *Square Numbers:*
+   Create a program that prints the square of numbers from 1 to 10 using a `for` loop. */
+   for(i=1;1<=10;i++)
+   {
+   	console.log(i**2);
+   }
+// 3. *Power of 2:*
+//    Write a program that prints the powers of 2 up to 2^10 (1024) using a `while` loop.
+ var i=1;
+ while(i<11)
+ {
+ console.log(2**i);
+ i++;
+ } 
+/*  4. *Even Numbers:*
+   Write a program that prints even numbers from 2 to 20 using a `for` loop. */
+   for(i=2;i<21;i=i+2)
+   {
+   console.log(i);
+   }
+// 9. *Sum of Digits:*
+//    Write a program that calculates the sum of digits for numbers from 1 to 20 using a `while` loop.
+var i=1;
+var sum=0;
+   while(i<21)
+   {
+   sum=sum+i;
+   i++;
+   }
+   
+   console.log(sum);
+/*  Write a program that prints leap years between 1900 and 2023 using a `for` loop. */
+for(i=1900;i<=2023;i++)
+{
+if(i%4==0||i%400==0)
+{
+console.log(i);
+}
+}
+//   Calculate and print the sum of even numbers from 1 to 20 using a `while` loop.
+var i=2;
+var sum=0;
+while(i<21)
+{
+sum=sum+i;
+
+i=i+2;
+}
+console.log(sum);
+/*     Write a program that prints numbers from 1 to 30, marking each number divisible by 3 with an asterisk (*) using a `while` loop. */
+var a=1;
+while(a<31)
+{
+if(a%3==0)
+{
+	console.log(a+"*");
+}
+else
+{
+	console.log(a);
+}
+a++;
+}
+/* 18. *Pattern Inversion:*
+    Create a program that prints an inverted pattern of numbers from 1 to 5:
+    
+    1 2 3 4 5
+    1 2 3 4
+    1 2 3
+    1 2
+    1 */
+    var t="";
+    for(i=5;i>=1;i--)
+    {
+    	for(j=1;j<=i;j++)
+      {
+      	t+=j;
+      }
+    t+="\n";
+    }
+    console.log(t);
+    // * Write a program that counts the number of vowels in a given sentence (without using arrays or strings) using a `while` loop. */
+
+    let a=prompt("Enter a sentence:");
+         let t=0;
+         for(i=0;i<a.length;i++)
+         {
+         		if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'){
+            t++;
+            }else{
+            t=t;
+            }
+            
+         }
+         console.log(t);
+//factorial//
+ var t=1;
+  
+   for(i=1;i<=10;i++)
+   {
+   t=t*i;
+   
+   
+     console.log(t);
+  
+   }
+   //adding numbers in a string
+ var a="he123oo";
+var t=0;
+for(i=1;i<a.length;i++)
+{
+if(a[i]>=0 && a[i]<=9)
+{
+t=Number(a[i])+t;
+
+}
+
+}
+/////////////////
+//dynamically printing
+function fun(n){
+for(i=1;i<=n;i++)
+{
+ console.log(i);
+}
+}
+fun(5);
+//////////////////\
+//square number
+function fun(n,q)
+ {
+ for(i=1;i<=n;i++)
+ {
+ console.log(q**i);
+ }
+ 
+ }
+ fun(5,2);
+//////////////////////
+ 
+ function fun(a)
+ {
+ for(i=0;i<a.length;i++)
+ {
+ console.log(a[i]);
+ 
+ } 
+ }
+ fun("string");
+////////////////////////////
+// Write a program to calculate salary of an employee given his basic pay (to be entered by the user), HRA = 10 per cent of basic pay, TA = 5 per cent of basic pay. Define HRA and TA as constants and use them to calculate the salary of the employee.
+var y=+ prompt("Enter the basic pay:");
+
+const HRA=(y/100)*10;
+const TA=(y/100)*5;
+ 
+console.log(y+HRA+TA);
+///////////////////////////////
+// Write a program that calculates number of seconds in a day. */
+function fun(day){
+var hours=24*day;
+var min=hours*60;
+var sec=min*60;
+console.log(sec)
+}
+fun(1);
+////////////////////////////
+// Write a program that prompts users to enter two integers x and y. The program then calculates and displays x power y.
+let x=+prompt("enter x value:");
+let y=+prompt("enter y value:");
+console.log(x**y);
+///////////////////
+// Write a program to calculate simple interest and compound interest.
+//////////////////////
+var a="aehsioswnsjsusbsb";//printing vowels in sentence
+var b="";
+for(i=0;i<a.length;i++)
+{
+if(a[i]=="a"||a[i]=="e"||a[i]=="i"||a[i]=="o"||a[i]=="u")
+{
+b=b+a[i];
+
+}
+
+}console.log(b);
+
+    </script>
+</body>
+</html>
