@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+ 
     <script>
     //     debugger;
     //  var a=10;//initialization
@@ -22,17 +23,66 @@
 
 
 
-    for(i=5;i>=1;i--)
+    // for(i=5;i>=1;i--)//pattern
+    // {
+    //     var t="";
+    // 	for(j=1;j<=i;j++)
+    //   {
+    //   	t+=j;
+    //   }
+    // // t+="\n";
+    // console.log(t);
+    // }
+    debugger;
+    
+//     function anagram(a,b)
+//    {
+//    var t=0;
+//    for(i=0;i<a.length;i++)
+//    {
+//    if(b.includes(a[i]))
+//    {
+//    t++;
+//    }
+   
+//    }
+//    if(t==a.length)
+//    {
+//    console.log("Aaagram");
+//    }
+//    }
+//    anagram("abc","bac")
+function anagram(a,b){
+    var count=0
+    var temp=""
+    if(a.length==b.length)
     {
-        var t="";
-    	for(j=1;j<=i;j++)
-      {
-      	t+=j;
-      }
-    // t+="\n";
-    console.log(t);
+       for(i=0;i<a.length;i++)
+        {
+         for(j=0;j<a.length;j++)
+         {
+           if(a[i]==b[j])
+           {
+            count=count+1
+              break;
+           } 
+         }
+        }
+        if(count==a.length)
+        {
+           console.log("It's a Anagram")
+        }
+        else
+        {
+           console.log("Not Anagram")
+        }
     }
-
+    else
+    {
+      console.log("Not a Anagram")
+    }
+    }
+    anagram("care","race")
     </script>
 </body>
 </html>
