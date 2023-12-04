@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Subarray with Given Sum**: Given an array of numbers and a target sum, find a contiguous subarray that adds up to the target
+        function contiguousSubarray(arr,n)
+{
+var b=[]
+	for(i=0;i<arr.length;i++)
+  {
+    var a=[]
+		var sum=arr[i]
+		a.push(arr[i]);
+		if(arr[i]==n)
+		{
+		 break
+		}
+		for(j=i+1;j<arr.length;j++)
+		{
+			a.push(arr[j]);
+			sum=sum+arr[j]
+			if(sum==n)
+			{
+       b.push(a)
+			 break;
+			}
+		} 
+}console.log(b);
+}
+contiguousSubarray([1,2,3,4,5],6)
+
+    </script>
+</body>
+</html>
